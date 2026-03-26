@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-journal-bg: #F8F9F7;
+  --color-journal-green: #3D5A45;
+  --color-journal-green-light: #E8F0E9;
+  --color-journal-ink: #1A1C19;
+  --color-journal-muted: #6B7280;
+  --color-journal-border: #E5E7EB;
+
+  --font-journal-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-journal-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-journal-bg text-journal-ink font-journal-sans antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-journal-border rounded-2xl shadow-sm;
+}
+
+.btn-primary {
+  @apply bg-journal-green text-white px-6 py-3 rounded-xl font-semibold hover:bg-journal-green/90 transition-all active:scale-95 flex items-center justify-center gap-2;
+}
+
+.input-field {
+  @apply w-full bg-white border border-journal-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-journal-green/20 focus:border-journal-green transition-all;
+}
+
