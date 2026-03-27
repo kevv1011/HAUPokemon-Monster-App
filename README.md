@@ -2,7 +2,7 @@
 **Final Project for Cloud Computing & Mobile Application Development**
 
 A high-fidelity mobile application and distributed cloud backend system built for tracking and managing virtual entities across multiple AWS regions.
-
+ 
 ---
 
 ## 👥 The Development Team & Roles
