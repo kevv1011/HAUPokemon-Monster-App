@@ -45,17 +45,19 @@ To interact with the live backend and database, you **must** be part of the proj
 ### 💻 Local Development Setup
 If you want to run the project locally on your machine:
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/kevv1011/HAUPokemon-Monster-App.git](https://github.com/kevv1011/HAUPokemon-Monster-App.git)
-    cd HAUPokemon-Monster-App/haupokemon-monster's-app
-    ```
-2.  **Install Dependencies:**
-    ```bash
-    npm install
-    ```
-3.  **Run the Development Server:**
-    ```bash
-    npm run dev
-    ```
-    *The app will be available at `http://localhost:5173`. Ensure your Tailscale is active if you are trying to fetch live data from the AWS
+#### 1. Pre-requisite: Install Node.js
+If you see an error saying `'npm' is not recognized`, you must install the Node.js runtime first:
+* **Download:** [nodejs.org](https://nodejs.org/) (Choose the **LTS** version).
+* **Important:** Restart VS Code/Terminal after installation.
+
+#### 2. Initialize the Project
+Run these commands in your terminal:
+```bash
+# Navigate to the app directory
+cd "haupokemon-monster's-app"
+
+# Install all project dependencies
+npm install
+
+# Start the development server
+npm run dev
