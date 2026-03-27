@@ -1,0 +1,8 @@
+{
+  "name": "HAUPokemon Monster's App",
+  "description": "A technical field journal for detecting, logging, and tracking monsters with real-time coordinates and global leaderboards.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera"
+  ]
+}
