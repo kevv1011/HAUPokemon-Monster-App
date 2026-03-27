@@ -9,7 +9,7 @@ A high-fidelity mobile application and distributed cloud backend system built fo
 
 | Name | Role | Primary Responsibilities |
 | :--- | :--- | :--- |
-| **Reyes** | **Lead Full-Stack Developer** | Mobile App Dev (React/Capacitor) & Git Management. |
+| **[Your Name]** | **Lead Full-Stack Developer** | Mobile App Dev (React/Capacitor), Cloud Orchestration, & Git Management. |
 | **Calaguas** | **Backend Engineer** | PHP API Gateway Development (AWS Paris) & Logic Implementation. |
 | **Manusig** | **Database Administrator** | RDS/MySQL Instance Management (US-East-1) & Schema Design. |
 | **Lumba** | **QA & Media Specialist** | System Testing, Video Production, & Final Presentation Lead. |
@@ -32,12 +32,6 @@ This project utilizes a **Multi-Region AWS Infrastructure** to ensure separation
 * **Real-time Leaderboard:** Dynamic "Elite Ranks" display fetching the top 10 monster hunters.
 * **Admin Control Center:** Interactive Google Maps interface for monster spawning and AWS EC2 instance automation.
 
-## 🛠️ Tech Stack
-* **Frontend:** React (TypeScript), Vite, Tailwind CSS, Capacitor.
-* **Backend:** PHP 8.x, MySQL.
-* **Cloud:** AWS EC2, VPC Peering, Tailscale VPN.
-* **Design:** Stitch High-Fidelity Prototyping.
-
 ---
 
 ## 🚀 Getting Started
@@ -48,9 +42,20 @@ To interact with the live backend and database, you **must** be part of the proj
 2.  Request access from the **Project Owner** to be added to the machine group.
 3.  Ensure the VPN is **Active** before launching the app.
 
-### Installation
-1.  Download the latest `app-debug.apk` from the [Releases](https://github.com/kevv1011/HAUPokemon-Monster-App/releases) page.
-2.  Alternatively, clone the repository:
+### 💻 Local Development Setup
+If you want to run the project locally on your machine:
+
+1.  **Clone the Repository:**
     ```bash
     git clone [https://github.com/kevv1011/HAUPokemon-Monster-App.git](https://github.com/kevv1011/HAUPokemon-Monster-App.git)
+    cd HAUPokemon-Monster-App/haupokemon-monster's-app
     ```
+2.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Run the Development Server:**
+    ```bash
+    npm run dev
+    ```
+    *The app will be available at `http://localhost:5173`. Ensure your Tailscale is active if you are trying to fetch live data from the AWS
